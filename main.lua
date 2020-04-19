@@ -2,9 +2,6 @@ love.graphics.setDefaultFilter("nearest", "nearest")
 require("assets/codebase/core/require")
 math.randomseed(os.time())
 
-
---Todo: check if game crashes when 2 astroids collide
-
 local debug = false
 local fullscreen = false
 
@@ -49,7 +46,7 @@ function love.keypressed(key)
 	if key == "escape" then 
 		love.event.quit()
 	elseif key == "f1" then 
-		debug = not debug
+		--debug = not debug
 	elseif key == "u" then 
 	--	ufo:new()
 	elseif key == "f11" then 
